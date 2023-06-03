@@ -38,6 +38,13 @@ body {
 
 .generalcolorleft {
     color: hsl(241, 100%, 89%);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.compliment {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .textsizel {
