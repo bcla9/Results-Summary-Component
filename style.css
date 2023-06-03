@@ -9,10 +9,11 @@ html {
 body {
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .maincard {
@@ -152,6 +153,14 @@ button {
     margin: 2rem 0 0 0;
 }
 
+button:hover {
+    background-color: hsla(224, 30%, 27%, 0.7);
+}
+
+button:active {
+    background: linear-gradient(0deg, hsl(241, 81%, 54%) 62%, hsl(252, 100%, 67%) 100%);
+}
+
 .ris {
     font-size: 0.9rem;
     font-weight: 800;
@@ -167,5 +176,18 @@ button {
 .attribution {
     position: fixed;
     bottom: 0;
-    right: 0;
+    text-align: center;
+    background-color: hsla(252, 100%, 67%, 1);
+    width: 100%;
+    color: hsl(241, 100%, 89%);
+}
+
+@media screen and (max-width: 600px) {
+    .leftcard {
+        border-radius: 0 0 2rem 2rem;
+    }
+}
+
+.attribution a {
+    color:hsl(222, 100%, 96%);
 }
